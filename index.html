@@ -9,13 +9,13 @@
         <h1>Заголовок</h1>
         <hr>
         <p>Выберите код:
-            <select name="cars" id="cars">
+            <select name="code" id="code">
                 <option value="cp1251">cp1251</option>
                 <option value="siberian">Сибирский код</option>
             </select>
         </p>
         <p>Действие:
-            <select name="cars" id="cars">
+            <select name="act" id="act">
                 <option value="encode">Зашифровать</option>
                 <option value="decode">Расшифровать</option>
             </select>
@@ -35,8 +35,7 @@
 
         function converting(data)
         {
-            
-            return "Error 1";
+            return eval(code.value + "_" + act.value + "()");
         }
     </script>
 </html>
