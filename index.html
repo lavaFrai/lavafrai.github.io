@@ -18,8 +18,22 @@
                 <option value="decode">Расшифровать</option>
             </select>
         <hr>
-        <textarea cols="30" rows="10" id="input" placeholder="Входные данные" wrap="off" autofocus="autofocus">
-        
-        </textarea>
+        <textarea cols="55" rows="10" id="input" placeholder="Входные данные" wrap="off" autofocus="autofocus"></textarea>
+        <button id="convert">Перевести > </button>
+        <textarea cols="55" rows="10" id="output" placeholder="Выходные данные" wrap="off" autofocus="autofocus" disabled="disabled"></textarea>
+        <br>
+        <p>Exit code: <span id="exitCode">0</span></p>
     </body>
+    <script>
+        convert.addEventListener("click", function () {
+            input.disabled = "disabled";
+            converting();
+            input.disabled = "";
+        });
+
+        function converting(data)
+        {
+
+        }
+    </script>
 </html>
