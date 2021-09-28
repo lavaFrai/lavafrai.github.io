@@ -3,12 +3,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" lang="ru">
         <title>SHP utilits</title>
+        <script src="/codec/cp1251.js"></script>
     </head>
     <body>
         <h1>Заголовок</h1>
         <hr>
         <p>Выберите код:
             <select name="cars" id="cars">
+                <option value="cp1251">cp1251</option>
                 <option value="siberian">Сибирский код</option>
             </select>
         </p>
@@ -27,13 +29,14 @@
     <script>
         convert.addEventListener("click", function () {
             input.disabled = "disabled";
-            converting();
+            output.value = converting(input.value);
             input.disabled = "";
         });
 
         function converting(data)
         {
-
+            
+            return "Error 1";
         }
     </script>
 </html>
