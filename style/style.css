@@ -5,14 +5,14 @@
 
 body {
     width: 100vw;
-    overflow: hidden;
+    overflow-x: hidden;
     background: #0a1929;
 }
 
 #object-title {
     width: 100%;
     color: #fff;
-    font-size: 1.6em;
+    font-size: 1.8em;
     text-align: center;
     font-family: PlusJakartaSans-ExtraBold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-weight: 700;
@@ -44,7 +44,7 @@ body {
 
 .object-label {
     color: #6F7E8C;
-    font-size: 0.7em;
+    font-size: 0.9em;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
