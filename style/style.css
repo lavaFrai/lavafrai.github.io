@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+    background: #0a1929;
+}
+
+#object-title {
+    width: 100%;
+    color: #fff;
+    font-size: 1.6em;
+    text-align: center;
+    font-family: PlusJakartaSans-ExtraBold, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+    padding-top: 1em;
+    padding-bottom: 0.7em;
+}
+
+#object-category {
+    color: #6F7E8C;
+    text-transform: none;
+    font-weight: 400;
+}
+
+#object-category::after {
+    content: '→';
+    margin-right: 0.3em;
+    margin-left: 0.2em;
+}
+
+#object-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.object-label {
+    color: #6F7E8C;
+    font-size: 0.7em;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.5em;
+
+    background: #082038;
+    border: #132f4c 1px solid;
+    padding: 0.3em;
+    margin: 0.3em;
+    border-radius: 0.4em;
+}
+
+.object-label-essential {
+    color: #ccc;
+    background: #e91e6320;
+    border: #e91e63 1px solid;
+    padding: 0.3em;
+    margin: 0.3em;
+    border-radius: 0.4em;
+}
