@@ -4,9 +4,9 @@
 }
 
 body {
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100%;
     background: #0a1929;
+    overflow-x: hidden;
 }
 
 .material-block {
@@ -147,7 +147,7 @@ body {
     margin-bottom: 0.6em;
 }
 
-#object-stats > h2, #in-detail-object > h2 {
+h2 {
     color: #fff;
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
@@ -158,4 +158,164 @@ body {
     padding-top: 0.5em;
     padding-bottom: 0.3em;
     padding-left: 0.5em;
+}
+
+#object-reports-container {
+    width: 90%;
+    margin: 0 5%;
+}
+
+#object-reports {
+    width: calc(100% - 1em);
+    margin-left: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+    #object-reports {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+.object-name-in-reports {
+    color: #ddd;
+    font-weight: 600;
+}
+
+.object-report {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: calc(100% - 1em);
+    padding: 0.4em 0.5em;
+
+    font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    color: #fff;
+}
+
+.object-report:nth-child(odd) {
+    background: rgb(37, 77, 117);
+}
+
+.object-report:last-child:nth-child(odd) {
+    margin-bottom: 0.6em;
+}
+
+.object-report-right-column {
+    display: flex;
+}
+
+.object-report-name {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.object-report-name:hover {
+    text-decoration: none;
+    color: #999;
+}
+
+.object-report-date {
+    color: #ccc;
+    font-weight: 600;
+    display: block;
+    width: 8em;
+    text-align: right;
+}
+
+.object-report-author {
+    color: #ccc;
+    font-weight: 600;
+}
+
+.object-report-name-title, .object-report-date-title, .object-report-author-title {
+    text-decoration: none;
+    color: #999;
+    font-weight: 200;
+}
+
+.object-report-date-title {
+    width: 8em;
+    text-align: right;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    border-top: #132f4c 1px solid;
+    border-bottom: none;
+    margin-top: 2em;
+    box-sizing: border-box;
+}
+
+.footer-button {
+    color: #66b2ff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin: auto 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+
+.footer-button:hover {
+    background: #66b2ff20;
+}
+
+.callback-footer-form {
+    color: #66b2ff;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    margin: auto 1em;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.callback-footer-form-button {
+    fill: #fff;
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1em;
+    transform: translate(0, -0.2em) scale(100%);
+    transition: all 0.3s;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.callback-footer-form-button-good {
+    transform-origin: -1.5em;
+}
+
+.callback-footer-form-button-bad {
+    transform-origin: 0px 6px;
+}
+
+.callback-footer-form-button-good:hover {
+    fill: #33eb91;
+    transform: rotate(-10deg);
+
+}
+
+.callback-footer-form-button-bad:hover {
+    fill: #e91e63;
+    transform: rotate(-10deg);
+}
+
+.callback-footer-form-button-hided {
+    opacity: 1;
+    fill: #6F7E8C;
+}
+
+.callback-footer-form-button-selected {
+    fill: #66b2ff;
 }

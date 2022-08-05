@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         value = parseInt(value);
 
-        console.log(value);
-
         stars[i].innerText = '★'.repeat(value) + '☆'.repeat(5 - value);
     }
 });
