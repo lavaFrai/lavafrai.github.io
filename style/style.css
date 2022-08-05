@@ -147,7 +147,7 @@ body {
     margin-bottom: 0.6em;
 }
 
-#object-stats > h2 {
+#object-stats > h2, #in-detail-object > h2 {
     color: #fff;
     font-size: 1.2em;
     font-family: 'Roboto', sans-serif;
